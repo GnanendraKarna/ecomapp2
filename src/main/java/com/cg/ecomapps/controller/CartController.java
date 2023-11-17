@@ -20,6 +20,7 @@ import com.cg.ecomapps.service.CartService;
 @RequestMapping("/cart")
 public class CartController {
 	
+	//collabration with karna fro this project
 	@Autowired
 	private CartService cartService;
 	
@@ -32,8 +33,7 @@ public class CartController {
 		return new ResponseEntity<>(newCart,HttpStatus.CREATED);
 		
 	}
-	///its karnas
-	//ganesh
+	
 	
 	@DeleteMapping("/deleteItem/{customerId}/{cartItemId}")
 	public ResponseEntity<Cart> deleteFromCart(@Valid @PathVariable int customerId, @Valid @PathVariable int cartItemId){

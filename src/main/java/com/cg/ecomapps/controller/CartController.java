@@ -32,6 +32,7 @@ public class CartController {
 		return new ResponseEntity<>(newCart,HttpStatus.CREATED);
 		
 	}
+	///its karnas
 	
 	@DeleteMapping("/deleteItem/{customerId}/{cartItemId}")
 	public ResponseEntity<Cart> deleteFromCart(@Valid @PathVariable int customerId, @Valid @PathVariable int cartItemId){
